@@ -265,7 +265,9 @@ p {
 }
 
 [data-theme="dark"] .navbar {
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(26, 32, 44, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -1798,461 +1800,288 @@ p {
 }
 
 /* ============================================
-   Responsive Design - Mobile & Tablet
+   Dark Mode Styles
 ============================================ */
 
-/* Tablet Landscape (992px - 1199px) */
-@media (max-width: 1199px) {
-    .container {
-        padding: 0 30px;
-    }
-    
-    .hero-container,
-    .about-content,
-    .contact-content {
-        gap: 40px;
-    }
+/* Dark Mode Body */
+body[data-theme="dark"] {
+    background: #1a202c;
+    color: #e2e8f0;
 }
 
-/* Tablet Portrait (768px - 991px) */
-@media (max-width: 991px) {
-    /* Navigation */
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background: rgba(255, 255, 255, 0.98);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        backdrop-filter: blur(10px);
-        padding: 20px 0;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-link {
-        margin: 15px 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    /* Hero Section */
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .hero-image {
-        order: -1;
-        margin-bottom: 30px;
-    }
-
-    .hero-content {
-        align-items: center;
-    }
-
-    .hero-title {
-        font-size: 2.2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.3rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .hero-buttons .btn {
-        width: 100%;
-    }
-
-    /* About Section */
-    .stats-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
-    }
-
-    /* Skills Section */
-    .skills-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
-    /* Projects Section */
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    /* Achievements Section */
-    .achievements-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
-    /* Certifications Section */
-    .certifications-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
-    /* Resume Section */
-    .resume-options {
-        gap: 30px;
-    }
-
-    /* Contact Section */
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
-
-    /* Footer */
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .footer-links {
-        justify-content: center;
-    }
-
-    .footer .social-links {
-        justify-content: center;
-    }
+/* Dark Mode Section Titles */
+body[data-theme="dark"] .section-title {
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile Large (576px - 767px) */
-@media (max-width: 767px) {
-    /* General */
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 40px;
-    }
-
-    .container {
-        padding: 0 20px;
-    }
-
-    /* Navigation */
-    .navbar {
-        padding: 15px 0;
-    }
-
-    .nav-logo {
-        font-size: 1.3rem;
-    }
-
-    /* Hero Section */
-    .hero {
-        padding: 100px 0 60px;
-    }
-
-    .hero-title {
-        font-size: 1.8rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .hero-description {
-        font-size: 0.95rem;
-    }
-
-    .image-placeholder {
-        width: 250px;
-        height: 250px;
-    }
-
-    .social-links {
-        gap: 12px;
-    }
-
-    .social-links a {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-    }
-
-    /* About Section */
-    .about,
-    .skills,
-    .projects,
-    .achievements,
-    .certifications,
-    .resume,
-    .contact {
-        padding: 60px 0;
-    }
-
-    .stats-container {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-number {
-        font-size: 2.5rem;
-    }
-
-    .timeline-item {
-        padding-left: 30px;
-    }
-
-    .timeline-item::before {
-        left: 0;
-    }
-
-    .timeline-date {
-        font-size: 0.85rem;
-        margin-bottom: 8px;
-    }
-
-    /* Skills Section */
-    .skills-container {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .skills-category h3 {
-        font-size: 1.3rem;
-    }
-
-    .skill-name {
-        font-size: 0.9rem;
-    }
-
-    /* Projects Section */
-    .project-filters {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .filter-btn {
-        font-size: 0.85rem;
-        padding: 8px 16px;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .project-card {
-        padding: 25px;
-    }
-
-    .project-title {
-        font-size: 1.3rem;
-    }
-
-    .project-description {
-        font-size: 0.9rem;
-    }
-
-    .tech-tag {
-        font-size: 0.75rem;
-        padding: 5px 12px;
-    }
-
-    /* Achievements Section */
-    .achievements-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .achievement-card {
-        padding: 25px;
-    }
-
-    .achievement-icon {
-        width: 80px;
-        height: 80px;
-        font-size: 2.5rem;
-    }
-
-    .achievement-content h3 {
-        font-size: 1.2rem;
-    }
-
-    /* Certifications Section */
-    .certifications-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .certification-card {
-        padding: 30px 20px;
-    }
-
-    .cert-icon {
-        width: 70px;
-        height: 70px;
-        font-size: 2rem;
-    }
-
-    .cert-content h3 {
-        font-size: 1.1rem;
-    }
-
-    /* Resume Section */
-    .resume-options {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .resume-card {
-        padding: 30px 25px;
-    }
-
-    .resume-icon {
-        width: 80px;
-        height: 80px;
-        font-size: 2.5rem;
-    }
-
-    .resume-card h3 {
-        font-size: 1.5rem;
-    }
-
-    .resume-card p {
-        font-size: 0.95rem;
-    }
-
-    .resume-actions .btn {
-        padding: 12px 20px;
-        font-size: 0.95rem;
-    }
-
-    /* Contact Section */
-    .contact-info,
-    .contact-form {
-        padding: 30px 20px;
-    }
-
-    .contact-info h3 {
-        font-size: 1.6rem;
-    }
-
-    .contact-item {
-        padding: 15px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .contact-item i {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        font-size: 0.95rem;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 40px 0 20px;
-    }
-
-    .footer-info h3 {
-        font-size: 1.5rem;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .footer-links a {
-        font-size: 0.95rem;
-    }
+/* Dark Mode Navbar */
+body[data-theme="dark"] .navbar {
+    background: rgba(26, 32, 44, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile Small (320px - 575px) */
-@media (max-width: 575px) {
-    .hero-title {
-        font-size: 1.5rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-
-    .hero-description {
-        font-size: 0.9rem;
-    }
-
-    .image-placeholder {
-        width: 220px;
-        height: 220px;
-    }
-
-    .btn {
-        font-size: 0.9rem;
-        padding: 10px 20px;
-    }
-
-    .section-title {
-        font-size: 1.7rem;
-    }
-
-    .achievement-icon,
-    .resume-icon {
-        width: 70px;
-        height: 70px;
-        font-size: 2rem;
-    }
-
-    .project-card,
-    .achievement-card,
-    .certification-card,
-    .resume-card {
-        padding: 20px;
-    }
+body[data-theme="dark"] .nav-logo,
+body[data-theme="dark"] .nav-link {
+    color: #fff;
 }
 
-/* Landscape Mode Fix for Mobile */
-@media (max-height: 600px) and (orientation: landscape) {
-    .hero {
-        padding: 80px 0 40px;
-    }
-
-    .image-placeholder {
-        width: 180px;
-        height: 180px;
-    }
-
-    section {
-        padding: 50px 0;
-    }
+body[data-theme="dark"] .nav-link:hover {
+    color: #667eea;
 }
 
-/* Dark Mode Mobile Adjustments */
-body.dark-mode .nav-menu {
+body[data-theme="dark"] .nav-link.active {
+    color: #667eea;
+}
+
+body[data-theme="dark"] .theme-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Dark Mode Hero Section */
+body[data-theme="dark"] .hero {
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+}
+
+body[data-theme="dark"] .hero-title,
+body[data-theme="dark"] .hero-subtitle {
+    color: #fff;
+}
+
+body[data-theme="dark"] .hero-description {
+    color: #cbd5e0;
+}
+
+/* Dark Mode About Section */
+body[data-theme="dark"] .about {
+    background: #1a202c;
+}
+
+body[data-theme="dark"] .about .section-title {
+    color: #fff;
+}
+
+body[data-theme="dark"] .intro-text {
+    color: #cbd5e0;
+}
+
+body[data-theme="dark"] .timeline-content h4,
+body[data-theme="dark"] .education h3,
+body[data-theme="dark"] .experience h3 {
+    color: #fff;
+}
+
+body[data-theme="dark"] .timeline-content p {
+    color: #a0aec0;
+}
+
+body[data-theme="dark"] .timeline-item {
+    background: rgba(45, 55, 72, 0.5);
+}
+
+body[data-theme="dark"] .stat-number {
+    color: #fff;
+}
+
+body[data-theme="dark"] .stat-label {
+    color: #cbd5e0;
+}
+
+/* Dark Mode Skills Section */
+body[data-theme="dark"] .skills {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+body[data-theme="dark"] .skills .section-title {
+    color: #fff;
+}
+
+body[data-theme="dark"] .skills-category {
+    background: rgba(45, 55, 72, 0.8);
+}
+
+body[data-theme="dark"] .skills-category h3 {
+    color: #fff;
+}
+
+body[data-theme="dark"] .skill-name {
+    color: #cbd5e0;
+}
+
+body[data-theme="dark"] .skill-bar {
+    background: rgba(74, 85, 104, 0.5);
+}
+
+/* Dark Mode Projects Section */
+body[data-theme="dark"] .projects {
+    background: #1a202c;
+}
+
+body[data-theme="dark"] .projects .section-title {
+    color: #fff;
+}
+
+body[data-theme="dark"] .filter-btn {
+    background: rgba(45, 55, 72, 0.8);
+    color: #cbd5e0;
+}
+
+body[data-theme="dark"] .filter-btn:hover,
+body[data-theme="dark"] .filter-btn.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+body[data-theme="dark"] .project-card {
+    background: rgba(45, 55, 72, 0.8);
+}
+
+body[data-theme="dark"] .project-title {
+    color: #fff;
+}
+
+body[data-theme="dark"] .project-description {
+    color: #cbd5e0;
+}
+
+body[data-theme="dark"] .image-placeholder {
+    background: rgba(74, 85, 104, 0.5);
+    color: #667eea;
+}
+
+/* Dark Mode Achievements Section */
+body[data-theme="dark"] .achievements {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+body[data-theme="dark"] .achievements .section-title {
+    color: #fff;
+}
+
+/* Dark Mode Certifications Section */
+body[data-theme="dark"] .certifications {
+    background: #1a202c;
+}
+
+body[data-theme="dark"] .certifications .section-title {
+    color: #fff;
+}
+
+body[data-theme="dark"] .certification-card {
+    background: rgba(45, 55, 72, 0.8);
+}
+
+body[data-theme="dark"] .cert-content h3 {
+    color: #fff;
+}
+
+body[data-theme="dark"] .cert-issuer {
+    color: #cbd5e0;
+}
+
+/* Dark Mode Resume Section */
+body[data-theme="dark"] .resume {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+body[data-theme="dark"] .resume .section-title {
+    color: #fff;
+}
+
+body[data-theme="dark"] .resume-card {
+    background: rgba(45, 55, 72, 0.8);
+}
+
+body[data-theme="dark"] .resume-card h3 {
+    color: #fff;
+}
+
+body[data-theme="dark"] .resume-card p {
+    color: #cbd5e0;
+}
+
+/* Dark Mode Contact Section */
+body[data-theme="dark"] .contact {
+    background: #1a202c;
+}
+
+body[data-theme="dark"] .contact .section-title {
+    color: #fff;
+}
+
+body[data-theme="dark"] .contact-info,
+body[data-theme="dark"] .contact-form {
+    background: rgba(45, 55, 72, 0.8);
+}
+
+body[data-theme="dark"] .contact-info h3 {
+    color: #fff;
+}
+
+body[data-theme="dark"] .contact-info > p {
+    color: #cbd5e0;
+}
+
+body[data-theme="dark"] .contact-item {
+    background: rgba(74, 85, 104, 0.3);
+}
+
+body[data-theme="dark"] .contact-item div h4 {
+    color: #fff;
+}
+
+body[data-theme="dark"] .contact-item div p {
+    color: #cbd5e0;
+}
+
+body[data-theme="dark"] .form-group label {
+    color: #fff;
+}
+
+body[data-theme="dark"] .form-group input,
+body[data-theme="dark"] .form-group textarea {
+    background: rgba(74, 85, 104, 0.3);
+    border-color: #4a5568;
+    color: #fff;
+}
+
+body[data-theme="dark"] .form-group input::placeholder,
+body[data-theme="dark"] .form-group textarea::placeholder {
+    color: #a0aec0;
+}
+
+body[data-theme="dark"] .form-group input:focus,
+body[data-theme="dark"] .form-group textarea:focus {
+    background: rgba(74, 85, 104, 0.5);
+    border-color: #667eea;
+}
+
+/* Dark Mode Footer */
+body[data-theme="dark"] .footer {
+    background: linear-gradient(135deg, #0d1117 0%, #1a202c 100%);
+}
+
+body[data-theme="dark"] .footer-info h3 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Dark Mode Mobile Navigation */
+body[data-theme="dark"] .nav-menu {
     background: rgba(26, 32, 44, 0.98);
 }
 
-body.dark-mode .hamburger .bar {
+body[data-theme="dark"] .hamburger .bar {
     background: #fff;
+}
+
+/* Scroll Progress Bar Dark Mode */
+body[data-theme="dark"] .scroll-progress {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
 }
 
 /* Prevent horizontal scroll */
