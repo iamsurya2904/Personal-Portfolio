@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya R | Full-Stack Developer & SOC Analyst</title>
+    <meta name="description" content="Portfolio of Surya R - Innovative Full-Stack Developer with expertise in AI integration, scalable web applications, and automation">
+    <meta name="keywords" content="Full-Stack Developer, SOC Analyst, Python, JavaScript, React, Flask, AWS, Cybersecurity">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Surya R | Full-Stack Developer & SOC Analyst">
+    <meta property="og:description" content="Innovative Full-Stack Developer with expertise in AI integration, scalable web applications, and automation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://surya-portfolio.vercel.app">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Add AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Surya R</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="hero-title">Hi, I'm <span class="highlight typing-animation">Surya R</span></h1>
+                <h2 class="hero-subtitle">Full-Stack Developer & SOC Analyst</h2>
+                <p class="hero-description">Cybersecurity-focused Computer Science undergraduate passionate about building secure and resilient digital environments with AI-powered threat detection and real-time monitoring solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary pulse-animation">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/surya-mahendran-7a76aa21b/" aria-label="LinkedIn" target="_blank" class="social-bounce"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/surya-mahendran" aria-label="GitHub" target="_blank" class="social-bounce"><i class="fab fa-github"></i></a>
+                    <a href="https://tryhackme.com/p/pavillionboy" aria-label="TryHackMe" target="_blank" class="social-bounce">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5 4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27 3.273 3.273 0 0 1 3.047-3.254c.13-.01.253-.065.35-.156a.627.627 0 0 0 .18-.407c.006-1.988 1.62-3.599 3.637-3.599 2.018 0 3.631 1.611 3.637 3.599a.627.627 0 0 0 .18.407.627.627 0 0 0 .35.156 3.273 3.273 0 0 1 3.047 3.254.625.625 0 1 0 1.25 0 4.525 4.525 0 0 0-4.107-4.5C16.508 2.285 13.87 0 10.705 0zm9.477 10.879a.625.625 0 0 0-.441.183l-4.115 4.115-1.928-1.928a.625.625 0 1 0-.884.884l2.37 2.37a.625.625 0 0 0 .884 0l4.557-4.557a.625.625 0 0 0-.443-1.067z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/iamsurya2904/" aria-label="Instagram" target="_blank" class="social-bounce"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Portfolio" target="_blank" class="social-bounce"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="image-placeholder floating-animation">
+                    <div class="profile-ring"></div>
+                    <img src="./src/.profile.jpeg" alt="Surya R Profile Picture" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user" style="display: none;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow bounce-animation">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-intro">
+                        <p class="intro-text">I am a Cybersecurity-focused Computer Science undergraduate passionate about building secure and resilient digital environments. I have hands-on experience in AI-powered threat detection, intrusion detection systems, and data recovery solutions, strengthened through hackathons, internships, and real-world projects.</p>
+                        <p class="intro-text">I thrive on solving complex security challenges, leveraging machine learning, DevSecOps practices, and real-time monitoring to protect digital assets. My aim is to innovate and contribute to next-generation cybersecurity solutions that drive safety, reliability, and trust in technology.</p>
+                    </div>
+                    
+                    <div class="stats-container" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-item">
+                            <div class="stat-number counter" data-target="5">0</div>
+                            <div class="stat-label">Python Tools</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number counter" data-target="95">0</div>
+                            <div class="stat-label">ML Accuracy %</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number counter" data-target="40">0</div>
+                            <div class="stat-label">Efficiency Improvement %</div>
+                        </div>
+                    </div>
+                    
+                    <div class="education">
+                        <h3 data-aos="fade-right" data-aos-delay="100">Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                                <div class="timeline-date">2022 – 2026</div>
+                                <div class="timeline-content">
+                                    <h4>B.E in Computer Science with Cyber Security Specialization</h4>
+                                    <p>Sathyabama Institute of Science and Technology, Chennai</p>
+                                    <p>CGPA: 7.65</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                                <div class="timeline-date">2021 – 2022</div>
+                                <div class="timeline-content">
+                                    <h4>Higher Secondary</h4>
+                                    <p>Alwin Memorial Public School, Chennai</p>
+                                    <p>Percentage: 75%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience">
+                        <h3 data-aos="fade-right" data-aos-delay="100">Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                                <div class="timeline-date">07/2025 – 10/2025</div>
+                                <div class="timeline-content">
+                                    <h4>Developer Intern - Shadowfox</h4>
+                                    <p>Developed 7+ Python automation utilities with robust validation, improving backend workflow efficiency by 30%.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
+                                <div class="timeline-date">07/2025 – 10/2025</div>
+                                <div class="timeline-content">
+                                    <h4>Intern - RedTeam Hacker Academy</h4>
+                                    <p>Mastered 10+ offensive/defensive tools in 50+ hands-on labs and executed 25 simulated network scans.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                                <div class="timeline-date">02/2024 – Present</div>
+                                <div class="timeline-content">
+                                    <h4>Event Coordinator Associate - OWASP Sathyabama University</h4>
+                                    <p>Organized 10+ cybersecurity awareness campaigns reaching 1,000+ students.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">React.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Bootstrap</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Backend & Databases</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Flask</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PostgreSQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MongoDB</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Security Tools</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Wireshark</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Nmap</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Burp Suite</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Metasploit</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">OpenVAS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>SIEM & Monitoring</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Splunk</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">ELK Stack</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Log Analysis</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SIEM Platforms</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Frameworks & ML</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Flask</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Streamlit</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Scikit-learn</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Machine Learning</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Cloud Security</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">AWS IAM</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">AWS Lambda</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">AWS S3 & EC2</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Cloud Monitoring</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="cybersecurity" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PhishNet AI</h3>
+                        <p class="project-description">Developed phishing detector processing 500+ URLs/sec with 95%+ accuracy and &lt;1 sec response time. Integrated 3 threat-intel APIs, reducing manual URL validation effort by 80%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iamsurya2904/PHISH-NET-AI-" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/iamsurya2904/PHISH-NET-AI-" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="cybersecurity" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-hdd"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BYTE PURSUIT</h3>
+                        <p class="project-description">Engineered file-recovery tool for Linux file systems (XFS, BTRFS) processing 1 million+ inodes in &lt;2 min, achieving 98% recovery rate. Automated evidence collection, reducing manual analysis time by 70%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">File Systems</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iamsurya2904/Byte-Pursuit" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/iamsurya2904/Byte-Pursuit" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="ai" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EduSmart AI</h3>
+                        <p class="project-description">Intelligent assistant for students, educators, and researchers featuring research paper analysis and career guidance. Dual-purpose Streamlit-powered platform with AI-driven insights for academic success.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iamsurya2904/AI-Research-Paper-Analysis-and-Career-guidance-system" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/iamsurya2904/AI-Research-Paper-Analysis-and-Career-guidance-system" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Automation Utilities</h3>
+                        <p class="project-description">Developed 7+ Python automation utilities with robust validation, improving backend workflow efficiency by 30%. Built web scrapers extracting and cleaning 50,000+ data points weekly.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Web Scraping</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+            <div class="certifications-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Certified SOC Analyst (CSA)</h3>
+                        <p class="cert-issuer">EC-Council</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Certified IT Infrastructure & SOC Analyst (CICSA)</h3>
+                        <p class="cert-issuer">RedTeam Hacker Academy</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Data Analytics</h3>
+                        <p class="cert-issuer">CISCO</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>AWS IAM Authentication & Authorization</h3>
+                        <p class="cert-issuer">AWS</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Resume</h2>
+            <div class="resume-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="resume-options">
+                    <div class="resume-card">
+                        <div class="resume-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Software Development</h3>
+                        <p>Full-stack development focused resume highlighting web development and programming skills</p>
+                        <div class="resume-actions">
+                            <a href="https://drive.google.com/file/d/1KnJsWyCJ5RaExMIwuYVEEnwKTxEuPwye/view?usp=sharing" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i> Download SDE Resume
+                            </a>
+                            <a href="https://drive.google.com/file/d/1KnJsWyCJ5RaExMIwuYVEEnwKTxEuPwye/view?usp=sharing" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-eye"></i> Preview
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-card">
+                        <div class="resume-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>SOC Analyst</h3>
+                        <p>Cybersecurity focused resume emphasizing threat detection and security operations skills</p>
+                        <div class="resume-actions">
+                            <a href="https://drive.google.com/file/d/1CErOO312aU2nV-VIi3wTQImgdHfhY8BY/view?usp=sharing" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i> Download SOC Resume
+                            </a>
+                            <a href="https://drive.google.com/file/d/1CErOO312aU2nV-VIi3wTQImgdHfhY8BY/view?usp=sharing" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-eye"></i> Preview
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and cybersecurity.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>suryamahiz904@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 7358570119</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chennai, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/surya-mahendran-7a76aa21b/" aria-label="LinkedIn" target="_blank" class="social-bounce"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/surya-mahendran" aria-label="GitHub" target="_blank" class="social-bounce"><i class="fab fa-github"></i></a>
+                        <a href="https://tryhackme.com/p/pavillionboy" aria-label="TryHackMe" target="_blank" class="social-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5 4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27 3.273 3.273 0 0 1 3.047-3.254c.13-.01.253-.065.35-.156a.627.627 0 0 0 .18-.407c.006-1.988 1.62-3.599 3.637-3.599 2.018 0 3.631 1.611 3.637 3.599a.627.627 0 0 0 .18.407.627.627 0 0 0 .35.156 3.273 3.273 0 0 1 3.047 3.254.625.625 0 1 0 1.25 0 4.525 4.525 0 0 0-4.107-4.5C16.508 2.285 13.87 0 10.705 0zm9.477 10.879a.625.625 0 0 0-.441.183l-4.115 4.115-1.928-1.928a.625.625 0 1 0-.884.884l2.37 2.37a.625.625 0 0 0 .884 0l4.557-4.557a.625.625 0 0 0-.443-1.067z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/iamsurya2904/" aria-label="Instagram" target="_blank" class="social-bounce"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Portfolio" target="_blank" class="social-bounce"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/xnngvqda" method="POST" data-aos="fade-left" data-aos-delay="200">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <!-- Formspree honeypot field to prevent spam -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <!-- Formspree configuration -->
+                    <input type="hidden" name="_next" value="#contact">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Surya R</h3>
+                    <p>Full-Stack Developer & SOC Analyst</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/surya-mahendran-7a76aa21b/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/surya-mahendran" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://tryhackme.com/p/pavillionboy" aria-label="TryHackMe" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5 4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27 3.273 3.273 0 0 1 3.047-3.254c.13-.01.253-.065.35-.156a.627.627 0 0 0 .18-.407c.006-1.988 1.62-3.599 3.637-3.599 2.018 0 3.631 1.611 3.637 3.599a.627.627 0 0 0 .18.407.627.627 0 0 0 .35.156 3.273 3.273 0 0 1 3.047 3.254.625.625 0 1 0 1.25 0 4.525 4.525 0 0 0-4.107-4.5C16.508 2.285 13.87 0 10.705 0zm9.477 10.879a.625.625 0 0 0-.441.183l-4.115 4.115-1.928-1.928a.625.625 0 1 0-.884.884l2.37 2.37a.625.625 0 0 0 .884 0l4.557-4.557a.625.625 0 0 0-.443-1.067z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/iamsurya2904/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Portfolio" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Surya R. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+</html></body>    <script src="script.js"></script>    <!-- JavaScript -->    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
